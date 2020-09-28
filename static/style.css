@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+
+.bord {
+    background: #a5bed39d;
+    padding-top: 1px;
+    padding-right: 13px;
+    padding-bottom: 23px;
+    padding-left: 23px;
+    border-radius: 13px;
+}

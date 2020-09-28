@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>01</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+</head>
+<div class="bord">
+<h1>Привет! Это - мой первый проект на Flask!</h1>
+<body class="main">
+    <div>
+        <p>Как тебя зовут?</p>
+        <form class="pure-form" method="POST" action="/">
+            <p>Имя: <br></p>
+            <p><input type="text" name="username"><br></p>
+            <p>Любимая еда: <br></p>
+            <p><input type="text" name="userfood"><br></p>
+            <button type="submit" class="pure-button pure-button-primary" value="submit">Нажать</button>
+        </form> 
+    </div>
+</div>
+    <br>
+    <div>
+        {% if name %}
+        <p>Привет, {{name}}, моя любимая еда - тоже {{food}}!</p>
+        {% endif %}
+    </div>
+</body>
